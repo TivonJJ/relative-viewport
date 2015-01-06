@@ -18,11 +18,12 @@ option配置项：
  <script type="text/javascript" src="relative.viewport.js" content="wdith=640"></script>
 ```
 配置项可以填写在引入标签的content属性中。
- width:页面设计宽度 默认为480
- targetDensitydpi: dpi属性， android4.4以后已经移除
- userScalable:是否支持手势缩放 "yes or no"
- maximumScale:最大缩放值 "int"
- minimumScale:最小缩放值 "int"
+
+- width:页面设计宽度 默认为480
+- targetDensitydpi: dpi属性， android4.4以后已经移除
+- userScalable:是否支持手势缩放 "yes or no"
+- maximumScale:最大缩放值 "int"
+- minimumScale:最小缩放值 "int"
 
 如index.html示列中，按照一个固定宽度来设计界面即可
 
