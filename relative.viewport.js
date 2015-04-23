@@ -1,5 +1,5 @@
 /**
- * 屏幕自动适配 beta1.2
+ * 屏幕自动适配 1.3
  */
 (function () {
     if (window.Viewport && window.Viewport.isReady)return;
@@ -97,7 +97,9 @@
         metaContent.userScalable = "yes";
         metaContent.maximumScale = scale;
         metaContent.minimumScale = scale;
-        if(getAndroidVersion().match(/^(4\.4)/)){
+        var androidVersion = getAndroidVersion(),
+            firstV = parseInt(androidVersion);
+        if(androidVersion.match(/^(4\.4)/) || firstV>4){
             metaContent.height = undefined;
             delete (metaContent.height);
         }
